@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item that displays an news -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="@dimen/padding"
+    android:paddingLeft="@dimen/padding"
+    android:paddingTop="@dimen/common_margin"
+    android:paddingRight="@dimen/padding"
+    android:paddingStart="@dimen/padding">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/title_color"
+            android:textSize="16sp"
+            tools:text="Iphone 14 and the pro models released. Google to release the Pixel 7 soon" />
+
+        <TextView
+            android:id="@+id/news_type"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/news_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textColor="@color/small_section_color"
+            android:textSize="@dimen/common_text"
+            tools:text="Samuel Gibbs"/>
+
+        <TextView
+            android:id="@+id/news_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/news_type"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/small_section_color"
+            android:textSize="@dimen/common_text"
+            tools:text="Technology" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
